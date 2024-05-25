@@ -9,6 +9,7 @@
 #include <vector>
 #include "ogldev_util.h"
 #include "WOAnim.h"
+#include "ModelParserAssimp.h"
 
 
 namespace Aftr
@@ -42,10 +43,9 @@ public:
    virtual void onKeyDown( const SDL_KeyboardEvent& key );
    virtual void onKeyUp( const SDL_KeyboardEvent& key );
 
+protected:
    std::vector<unsigned int> woList;
    Assimp::Importer importer;
-
-protected:
    GLViewCS4350_Final_Animations( const std::vector< std::string >& args );
    virtual void onCreate();   
 };

@@ -233,6 +233,7 @@ void Aftr::GLViewCS4350_Final_Animations::loadMap()
    }
 
    {
+      
       WOAnim* wo = WOAnim::New( bob, Vector( 0.5, 0.5, 0.5 ), MESH_SHADING_TYPE::mstAUTO, woList,importer);
       wo->setPosition( Vector( 0, 0, 30 ) );
       wo->renderOrderType = RENDER_ORDER_TYPE::roOPAQUE;
